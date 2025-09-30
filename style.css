@@ -61,32 +61,32 @@ footer {
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 charts per row */
-    gap: 30px;
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    max-width: 700px; 
     margin: 30px auto;
-    max-width: 1200px;
 }
 
 .image-box {
     text-align: center;
     background: #fafafa;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .image-box h2 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
     color: #333;
 }
 
 .image-box img {
     width: 100%;
-    max-width: 280px;
+    max-width: 600px; 
     height: auto;
     border-radius: 6px;
     border: 2px solid #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
